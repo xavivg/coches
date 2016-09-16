@@ -19,5 +19,6 @@ public class Main {
 
         System.out.println("Muestro Mercedes: "+cocheList.get(2));
 
+        System.out.println("Muestro Mercedes: "+cocheList.get(1));
     }
 }
