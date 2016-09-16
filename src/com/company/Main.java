@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main {
@@ -20,5 +21,18 @@ public class Main {
         System.out.println("Muestro Mercedes: "+cocheList.get(2));
 
         System.out.println("Muestro Mercedes: "+cocheList.get(1));
+
+        HashMap<String, coche> map = new HashMap<String, coche>();
+
+        map.put(Ferrari.getMatricula(),Ferrari);/*Voy a usar la matricula como index para imprimir todo el coche*/
+        map.get(Ferrari.getMatricula());
+        map.put(Mercedes.getMatricula(),Mercedes);/*Voy a usar la matricula como index para imprimir todo el coche*/
+        map.get(Mercedes.getMatricula());
+
+
+        System.out.println("hash matricula Ferrari: "+map.get(Ferrari.getMatricula()));
+        System.out.println("hash matricula Mercedes: "+map.get(Mercedes.getMatricula()));
+        System.out.println("Muestro las keys "+map.keySet());
+        System.out.println("Muestro los values "+map.values());
     }
 }
