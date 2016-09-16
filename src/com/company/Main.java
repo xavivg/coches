@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println("Muestro Mercedes: "+cocheList.get(1));
 
-        HashMap<String, coche> map = new HashMap<String, coche>();
+        HashMap<String, coche> map = new HashMap<>();
 
         map.put(Ferrari.getMatricula(),Ferrari);/*Voy a usar la matricula como index para imprimir todo el coche*/
         map.get(Ferrari.getMatricula());
